@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+
+:root{
+  --primaryFont: "Red Hat Display", sans-serif;
+
+  --blue100: hsl(225, 100%, 94%);
+  --blue700: hsl(245, 75%, 52%);
+  --blue50: hsl(225, 100%, 98%);
+  --gray600: hsl(224, 23%, 55%);
+  --blue950: hsl(223, 47%, 23%);
+  --blueHover: hsl(245, 83%, 68%);
+  --blueLight: hsl(240, 36%, 96%);
+  --blueShadow: hsla(245, 83%, 68%, 0.25);
+  --whiteColor: hsl(0, 0%, 100%);
+}
+
+*,*::after,*::before{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,body{
+  height: 100vh;
+
+}
+img{
+  max-width: 100%;
+  height:auto;
+}
+body{
+  background-color: var(--blue100);
+  background-image: url(images/pattern-background-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  font-family: var(--primaryFont);
+  font-size: .85rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card{
+  background-color: var(--blue50);
+  max-width: 24rem;
+  text-align: center;
+  border-radius: 1rem;  
+}
+.card img{
+  border-radius: 1rem 1rem 0 0;
+}
+.card_body{
+  padding: 1.875rem;
+
+}
+.card_body h1{
+  color: var(--blue950);
+  font-size: 1.375rem;
+  font-weight: 900;
+  margin-block-end: 1rem;
+}
+.card_body p{
+  font-size: 1rem;
+  color: var(--gray600);
+  margin-block-end: 1rem;
+  line-height: 1.5rem;
+}
+.plan{
+  background-color: var(--blueLight);
+  display: flex;
+  align-items: center;
+  border-radius: .5rem;
+  margin-block-end: 1.725rem;
+  padding: 1rem;
+}
+.plan img{
+  margin-right: 1rem;
+}
+.plan h4 span{
+  color: var(--blue950);
+  font-weight: 900;
+  display: block;
+}
+.plan h4{
+  color: var(--gray600);
+  font-weight: normal;
+
+}
+.change{
+  color: var(--blue700);
+  font-weight: 900;
+  margin-left: auto;
+}
+.change:hover{
+  color: var(--blueHover);
+  text-decoration: none;
+}
+
+
+a.payment{
+  background-color: var(--blue700);
+  font-weight: 700;
+  color: var(--whiteColor);
+  text-decoration: none;
+  display: block;
+  padding: .80rem 1rem;
+  border-radius: .725rem;
+  margin-block-end: 1.5rem;
+  box-shadow: 0px 15px 20px var(--blueShadow) ;
+}
+a.payment:hover{
+  background-color: var(--blueHover);
+} 
+a.cancel{
+  color: var(--gray600);
+  text-decoration: none;
+  font-weight: 700;  
+}
+a.cancel:hover{
+  color: var(--blue950);
+}
+@media screen and (max-width:26.25rem){
+  .body{
+    
+  }
+  main{
+    padding: 1rem 1rem;
+  }
+}
