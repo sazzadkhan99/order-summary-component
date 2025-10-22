@@ -31,13 +31,15 @@ body{
   background-color: var(--blue100);
   background-image: url(images/pattern-background-desktop.svg);
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: 100% auto;
+  background-position: top center ;
   font-family: var(--primaryFont);
   font-size: .85rem;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 .card{
   background-color: var(--blue50);
   max-width: 24rem;
@@ -46,6 +48,7 @@ body{
 }
 .card img.cover{
   width: 100%;
+  display: block;
   border-radius: 1rem 1rem 0 0;
 }
 .card_body{
@@ -119,10 +122,11 @@ a.cancel:hover{
   color: var(--blue950);
 }
 @media screen and (max-width:26.25rem){
-  .body{
-    
+  body{
+    background-image: url(images/pattern-background-mobile.svg);
   }
   main{
+    max-width: 22rem;
     padding: 1rem 1rem;
   }
 }
