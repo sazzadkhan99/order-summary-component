@@ -78,12 +78,12 @@ body{
 .plan img{
   margin-right: 1rem;
 }
-.plan h4 span{
+.plan p span{
   color: var(--blue950);
   font-weight: 900;
   display: block;
 }
-.plan h4{
+.plan p{
   color: var(--gray600);
   font-weight: normal;
 
